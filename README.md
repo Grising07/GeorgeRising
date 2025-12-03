@@ -1,8 +1,13 @@
 Computer Programming: Portfolio
+
 George Rising
+
 Group E
+
 Andrew Scholey
+
 By submitting this work you are confirming that the work in this repo is your own.
+
 
 You are also confirming that you have completed the file AI_Declaration.md to confirm how you have used AI tools in the production of this work. You are confirming that you understand that, if this file is blank, you will receive a mark of zero.
 
