@@ -212,6 +212,131 @@ Week 7:
 using AI
 AI changes many aspects of how we work, including programming. 
 
+What is github copilot? 
+AI pair programmer that suggests code, comments and tests inside your editor e.g. VS code 
+Use it as an assistant - always review and run suggested code
+
+how copilot fits your workflow 
+complete lines and whole functions as you type 
+can generate tests, docstrings and examples
+treat suggestions like an initial draft to review
+
+installing and enabling 
+install github copilot extension in VS code 
+sign in with github and enable inline suggestions 
+configure acceptance keys( tab/ ctrl+enter) and privacy settings.
+
+prompting basics 
+clear docstrings, type hints and descriptive comments improve suggestion quality.
+start the comment/docstring and copilot often completes the implementation
+
+asks copilot to write tests 
+use prompts like write pytest text for ..." and copilot will suggest test cases and edge cases
+
+debugging with copilot
+when a test fails, show the failing code and ask copilot for a fix- always run and inspect the fix
+
+security and secrets
+never accepr suggestions that expose API keys 
+do not paste secret files into the editor when using copilot
+
+licensing and attribution 
+generated code may resemble public sources. check licensing rules and follow course policies before reuse
+
+academic integrity 
+check your modules policy on AI assistance 
+if allowed document copilot use in comments or README and ensure you understand the code
+
+productivity tips and tools
+use small specific promts for targeted suggestions 
+combine copilot with linters(flake8), formatters (black) and type checkers(mypy)
+accept suggestions as starting points - then test and refactor
+
+hands on lab and recources
+lab: implement a CLI calculator and tests using copilot. run tests, fix issues and refactor 
+
+recources: GitHub Copilot docs, Python docs, pytest examples
+practice: review, test and improve copilot suggestions rather than copying
+
+
+
+
+
+week 8: 
+
+a lamentation
+in modules like this we prepare examples, make slides, provide videos, even give lectures, all of which take up a lot of time
+
+working/ good code
+this is possibly reasonable, because when you start out your focus is on getting things to work
+but code that works is really only part of what we're trying to create
+
+indentatiom
+in python this is very important and it is written that the number of spaces in the indentation shall be four
+
+reading and writing
+because we know that code is read more than it is written
+so it sureley makes sense to follow accepted conventions to make the readers tasks easier?
+this is where being dry comes in
+
+keep it simple 
+we need to understand programs long after they were written 
+so surely adopting an apporach that makes this as easy as possible is a sound plan?
+
+dry and wet 
+dry- dont repeat yourself - in programming we are in the business of capturing the rules of the real world in computer code, this is why we use dry 
+wet- we enjoy training
+
+
+good dry code 
+a good piece of code should be doing exactly one thing 
+that way. it will either work or not work 
+but if the latter, it is obvious where the fix is needed, and making that fix will apply everywhere.
+
+dry and AI- AI works best with short, precise prompts
+so a well crafted AI prompt should produce a useful snippet of DRY code
+
+
+
+
+
+
+week 9:
+
+the joy of the command line 
+the command line - is a text based interface to your computer 
+long ago it wss the only interface there was 
+
+terminal commands
+commands typed into the terminal carry out operations. They run programs, move files and so on 
+commands are interpreted by a shell
+commands that folks used in the 1970s and 80s still work on modern systems
+
+IDEs and GUIs 
+graphical interfaces (WIMP) on the other hand come and go
+they can be traced back to the 1970s with widespread adoption in the 80s
+knowledge of these early interfaces is largely useless today
+
+WIMP principles
+there are some standards in WIMP interfaces 
+arguably this makes them easier to learn 
+because there are so many variations sometimes petty little ones 
+
+WIMP interfaces rely heavily on metaphors
+the desktoo metaphor is a good example 
+files ae stored in folders. which are opened in windows on a desktop.
+
+files and apps
+windows for example closly links with a file with the application that opens it 
+this is conveniant for casual users, and fine for simple tasks. 
+but there are dozens if not more, apps we might want to use to open a python program file
+
+the command line 
+while point and click interfaces are convenient, the command line offers greater flexibility and control 
+by command line, we usually mean the Unix/Linux shell. which is turn usually means a shell called bash
+
+
+
 
 
 
