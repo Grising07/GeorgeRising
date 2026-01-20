@@ -1,0 +1,362 @@
+Week 1: 
+
+programminging is a skill that you learn by doing. videos, books and even lectures can help you, but you learn to program by programming. 
+
+a program is a set of instrusctions to express how to solve a problem, or perform a task
+it is written in a specialised language that can be executed by a computer and read and understood by other programmers. 
+
+
+a program is like a set of instructions 
+
+Sequence- steps carried out in order one at a time
+Selection- some steps are included or omitted
+
+reading a program is easy but writing one is harder. this is simply because there is a lot more to it 
+you need to be able to find problems, understand the causes and fix them. 
+
+experience is the key to programming. the problem is you cannot learn experience from books and notes, this means you must gain it by practice and making mistakes.
+
+"programming is the art of telling another human being what one wants the computer to do." Donald Kuth 
+
+
+
+
+Week 2: programming languages: 
+
+"you have to know the past to understand the present" Carl Sagan 
+
+why do we have computers? computers are really good at carrying out repetitive tasks. they are accurate and fast and can work for a long amount of time without getting tired.
+humans are really bad at carrying out repetitive tasks as we get bored, tired and make mistakes. 
+
+a computer that carries out a specific task very accurately and quickly has its uses. 
+but if we can program it to do different tasks, then we can use the same computer for many different purposes. and it becomes much more useful. 
+
+first generation programming: colossus was programmed using plugs and switches. this might represent a very early form of program. 
+early programming was very low level and very specific to the hardware. in effect, every computer was programmed in a different way. 
+such programming requires very detailed knowledge of how the specific computer worked. 
+
+second generation programming: programmig moved to a higher level with the introduction of assembly languages. these can be though of as short codes that correspond to the basic operations of the computer. 
+assembly languages are still very low level and specific to the CPU. they are not portable between different computers using different CPUs.
+
+Third generation language: since this idea emerged there have been many programming languages. 
+some languages follow the obect-orientated paradigm ( java,C#), some are funtional( haskell, scala) some are procedural( C, Pascal), and so on
+some languages are multi-paradigm which is python. 
+
+
+
+
+
+
+
+
+
+Week 3: Computers and instructions: 
+
+The python interpreter is the program that will execute python code
+
+It can process complete programs or we can use it interactively 
+Strictly a python program is a script
+
+Abstraction- a language like python means that we do not need to worry too much about how the computer works. Having a general idea is useful
+
+Arithmetic operations done in CPU
+There is a small amount of memory in the CPU
+For processing values are copied to and from the CPU
+
+A python statement to create a named value is something like: >>> spam = 42 = 101010
+
+The value is identified as an integer 
+The value 42(denary) is stored in memory at an address using an amount of memory suitable for an integer
+The name spam is created
+
+Not all values are integers 
+Other data types are handled in the same way
+Booleans are basically integers anyway. Characters can be represented as unicode values. And floating point numbers can( sort of) work in binary.
+
+String is a collection of 4 characters
+
+The value of an integer is limited by the number of bits used to store one 
+The size if floating point numbers is likewise limited
+
+Performance issues- the length of a string is limited by the amount of memory available 
+Obviously with many GB of memory it is very unlikely that this will be an issue 
+But suppose we want a process to say, 1gb log file 
+
+Inside the CPU:
+ALU-arithmetic logic unit
+PCU-program control unit
+Registers-small amounts 
+
+Errors in programming - syntax errors when the program does not follow the rules of the language
+Logic errors are when the program 
+
+
+
+
+
+
+
+Week 4:
+
+What skills does a programmer need
+VCS - version control systems 
+CSCW Computer supported collaborative work
+
+Certain tools that everyone should be able to use
+Basic widnows file management 
+Basic linux/ mac file management 
+Command line git 
+Basic text editors(notepad, vi)
+
+tools are very personal It is important to use the "best" tools. and what is best can be very different for different devs. 
+surveys tell us that windows and mac/linux have about a 50/50 share.
+VS Code and JetBrains (PyCharm) are also about 50:50.
+if you looked at a devs setup, you would probably see that it was highly customised, which is just as it should be 
+
+making a choice of operating system:
+cost/ availability
+experience
+bigger picture/ ecosystems 
+suitability 
+personal preferences
+beliefs
+
+customising: 
+preference 
+individuality
+eyesight
+RSI/ other speical needs
+sense of ownership
+
+very few programmers work in isolation
+programming can be a very social activity
+because obviously any non trivial system will require several developers.
+
+
+
+
+week 5: 
+programs have bugs:
+it is impossible to demonstrate that even the very simplest program does not have a bug.
+its imposible to even run the very simplest program in every possible set of conditions. 
+the best we can do is build up confidence that a program, probably, works as required. most of the time.
+consider for example, that you are using your laptop and phone today in a way that has never been done before by anyone, anywhere, and will never be done again by anyone, anywhere.
+or, think about how likely it is that any single race in Mario Kart will ever be exaclty repeated. 
+
+what is a bug: 
+a bug is a mistake in a program that causes it to behave unexpectedly or incorrectly.
+
+bugs can arise from a variety of sources, including misunderstandings of the problem domain, incorrect assumptions. and simple human error. 
+they can lead to a range of issues, from the minor glitches to major system failures.
+
+errors in programming: 
+
+Syntax errors are when the program does not follow the rules of the language, and it fails to compile or run.
+
+logic (semantic) errors ar when the program runs, but does not do what you intended. 
+
+bugs: there are really two ways in which bugs manifest themselves:
+
+the program appears to run correctly, but produces incorrect results in some situations. 
+
+the program fails in some situations 
+
+the chances of error:
+some error conditions are more likely than others. 
+obvious errors should be cleared and handled gracefully
+but there comes a point where this is not worthwhile. consider the effort in programming, and the additional size of the program. 
+
+
+
+
+
+Week 6:
+Be Happy 
+a program specification usually describes what should happen if everything goes to plan. 
+all inputs are expected, all output devices are present, and so on. 
+
+It is tempting to code the happy path first,  and with good reason
+
+it is well documented
+its the most important part
+it may well be the most interesting part
+(similarly) - it delivers the most value
+sometimes we stray from the path, and we need to code what should happen then. 
+also obviously, a program should not just crash when somehting unexpected happens
+so we are going to extend significant effort coding what we might think of as the less than happy path.
+
+the range of things:
+considering the number of students to be organised into groups, we can confidently say that: 
+this value is an integer
+the value's lower bound is zero
+but can we say anything about the upper bound?
+there clearly is one. 
+
+a number is a number
+class_size = int(input("how many students are there?"))
+the value entered could be a class size 
+the value entered is always an integer.
+the first could be a domain error, the second could be a type error.
+
+handling errors
+one approach is to look before you leap (LBYL)
+here, we check everything is ok before we do anything that might cause an error. 
+this means we need to validate all inputs and preconditions before proceeding. 
+
+
+
+
+
+Week 7:
+
+using AI
+AI changes many aspects of how we work, including programming. 
+
+What is github copilot? 
+AI pair programmer that suggests code, comments and tests inside your editor e.g. VS code 
+Use it as an assistant - always review and run suggested code
+
+how copilot fits your workflow 
+complete lines and whole functions as you type 
+can generate tests, docstrings and examples
+treat suggestions like an initial draft to review
+
+installing and enabling 
+install github copilot extension in VS code 
+sign in with github and enable inline suggestions 
+configure acceptance keys( tab/ ctrl+enter) and privacy settings.
+
+prompting basics 
+clear docstrings, type hints and descriptive comments improve suggestion quality.
+start the comment/docstring and copilot often completes the implementation
+
+asks copilot to write tests 
+use prompts like write pytest text for ..." and copilot will suggest test cases and edge cases
+
+debugging with copilot
+when a test fails, show the failing code and ask copilot for a fix- always run and inspect the fix
+
+security and secrets
+never accepr suggestions that expose API keys 
+do not paste secret files into the editor when using copilot
+
+licensing and attribution 
+generated code may resemble public sources. check licensing rules and follow course policies before reuse
+
+academic integrity 
+check your modules policy on AI assistance 
+if allowed document copilot use in comments or README and ensure you understand the code
+
+productivity tips and tools
+use small specific promts for targeted suggestions 
+combine copilot with linters(flake8), formatters (black) and type checkers(mypy)
+accept suggestions as starting points - then test and refactor
+
+hands on lab and recources
+lab: implement a CLI calculator and tests using copilot. run tests, fix issues and refactor 
+
+recources: GitHub Copilot docs, Python docs, pytest examples
+practice: review, test and improve copilot suggestions rather than copying
+
+
+
+
+
+week 8: 
+
+a lamentation
+in modules like this we prepare examples, make slides, provide videos, even give lectures, all of which take up a lot of time
+
+working/ good code
+this is possibly reasonable, because when you start out your focus is on getting things to work
+but code that works is really only part of what we're trying to create
+
+indentatiom
+in python this is very important and it is written that the number of spaces in the indentation shall be four
+
+reading and writing
+because we know that code is read more than it is written
+so it sureley makes sense to follow accepted conventions to make the readers tasks easier?
+this is where being dry comes in
+
+keep it simple 
+we need to understand programs long after they were written 
+so surely adopting an apporach that makes this as easy as possible is a sound plan?
+
+dry and wet 
+dry- dont repeat yourself - in programming we are in the business of capturing the rules of the real world in computer code, this is why we use dry 
+wet- we enjoy training
+
+
+good dry code 
+a good piece of code should be doing exactly one thing 
+that way. it will either work or not work 
+but if the latter, it is obvious where the fix is needed, and making that fix will apply everywhere.
+
+dry and AI- AI works best with short, precise prompts
+so a well crafted AI prompt should produce a useful snippet of DRY code
+
+
+
+
+
+
+week 9:
+
+the joy of the command line 
+the command line - is a text based interface to your computer 
+long ago it wss the only interface there was 
+
+terminal commands
+commands typed into the terminal carry out operations. They run programs, move files and so on 
+commands are interpreted by a shell
+commands that folks used in the 1970s and 80s still work on modern systems
+
+IDEs and GUIs 
+graphical interfaces (WIMP) on the other hand come and go
+they can be traced back to the 1970s with widespread adoption in the 80s
+knowledge of these early interfaces is largely useless today
+
+WIMP principles
+there are some standards in WIMP interfaces 
+arguably this makes them easier to learn 
+because there are so many variations sometimes petty little ones 
+
+WIMP interfaces rely heavily on metaphors
+the desktoo metaphor is a good example 
+files ae stored in folders. which are opened in windows on a desktop.
+
+files and apps
+windows for example closly links with a file with the application that opens it 
+this is conveniant for casual users, and fine for simple tasks. 
+but there are dozens if not more, apps we might want to use to open a python program file
+
+the command line 
+while point and click interfaces are convenient, the command line offers greater flexibility and control 
+by command line, we usually mean the Unix/Linux shell. which is turn usually means a shell called bash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
